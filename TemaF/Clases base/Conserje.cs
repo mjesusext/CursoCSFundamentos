@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TemaF.Clases_base
+{
+    public class Conserje : Persona, IContribuyente, IFuncionario
+    {
+        public void PagarImpuestos()
+        {
+            Console.WriteLine("Pagando impuestos");
+        }
+
+        public void CotejarDocumentos()
+        {
+            Console.WriteLine("Cotejando documentos");
+        }
+
+        public override void MostrarNombre()
+        {
+            Console.WriteLine("El nombre es " + Nombre + " " + Apellidos);
+        }
+    }
+}
